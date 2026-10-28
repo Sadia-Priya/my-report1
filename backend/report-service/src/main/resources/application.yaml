@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: report-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pf_report_db
+    username: postgres
+    password: ${DB_PASSWORD}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# auth-service er secret er sathe hubohu eki hote hobe
+jwt:
+  secret: my-secret-key-2026

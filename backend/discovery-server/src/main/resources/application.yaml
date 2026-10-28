@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-server
+
+eureka:
+  client:
+    register-with-eureka: false   # eta nije server, tai nijeke register kore na
+    fetch-registry: false
+  server:
+    response-cache-update-interval-ms: 3000   # notun service taratari list e ashe
